@@ -3,7 +3,7 @@
 Cette extension vous permettra, à l'aide de la succession de touche <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>H</kbd>,
 de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 
-> :bulb: La version peut changer durant les années.
+> :bulb: La version peut changer durant les années.<br />
 > Pour implémenter les nouvelles versions (si il y en a), faites le moi savoir en issue ou directement par email.
 
 ## Exemple de header
