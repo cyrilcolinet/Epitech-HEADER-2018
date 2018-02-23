@@ -1,16 +1,22 @@
-# Phoenix ==> EPITECH headers package
+# Epitech HEADER - Atom Editor Plugin
 
-EPITECH Atom package used to create new EPITECH compliant headers in Makefiles, .c and .h files
+Cette extension vous permettra, à l'aide de la succession de touche <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>H</kbd>,
+de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 
-## Insert EPITECH Headers
+> :bulb: La version peut changer durant les années.
+> Pour implémenter les nouvelles versions (si il y en a), faites le moi savoir en issue ou directement par email.
 
-Using the shortcut <kbd>ctrl-shift-h</kbd> (Mac, Linux and Windows).
-![Screen Shot 2017-10-09 at 18.34.04](https://user-images.githubusercontent.com/14131962/31348658-a1c9eeb2-ad20-11e7-8091-e4ca4e64c18a.png)
+## Exemple de header
 
-## Configuration
+```c
+/*
+** Epitech Header, 2018
+** $(PROJECT_NAME)
+** File description:
+** $(FILE_DESC)
+*/
+```
 
-No Configuration Needed
-
-## Credits
-
-Created and maintained by [Guillaume LE MARTRET](https://github.com/sNohz)
+Avec:
+    - **PROJECT_NAME**: Le nom du projet/repo (exemple: PSU_minishell1_2017)
+    - **FILE_DESC**: Description du fichier, ce qu'il contient, l'utilité des différentes functions etc...
