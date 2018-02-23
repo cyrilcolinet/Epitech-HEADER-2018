@@ -1,11 +1,11 @@
 {
-  "name": "phoenix-epitech-headers",
-  "main": "./lib/phoenix-epitech-headers",
-  "version": "0.2.3",
-  "description": "EPITECH Atom package used to create EPITECH compliant headers in Makefiles, .c and .h files",
+  "name": "epitech-header-2018",
+  "main": "./lib/epitech-header",
+  "version": "1.0",
+  "description": "Epitech Header 2018",
   "keywords": [],
   "repository": "https://github.com/sNohz/phoenix-epitech-headers",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
