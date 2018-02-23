@@ -1,18 +1,12 @@
 {
-    "menu": [
-        {
-            "label": "Packages",
-            "submenu": [
-                {
-                    "label": "Epitech HEADER 2018",
-                    "submenu": [
-                        {
-                            "label": "Create header with project name and descriptions",
-                            "command": "epitech-header:createHeader"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "Epitech HEADER 2018",
+            "submenu": [{
+                "label": "Create header",
+                "command": "epitech-header:create_header"
+            }]
+        }]
+    }]
 }

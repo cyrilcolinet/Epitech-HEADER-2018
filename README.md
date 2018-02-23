@@ -10,7 +10,7 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 
 ```c
 /*
-** Epitech Header, 2018
+** EPITECH PROJECT, 2018
 ** $(PROJECT_NAME)
 ** File description:
 ** $(FILE_DESC)
