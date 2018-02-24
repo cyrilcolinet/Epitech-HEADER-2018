@@ -1,4 +1,4 @@
-{CompositeDisposable} = require 'atom'
+{ CompositeDisposable, Cursor } = require 'atom'
 path = require 'path'
 Template = require './template'
 Comments = require './comments'
@@ -42,7 +42,8 @@ module.exports = EpitechHeader =
         return paths.pop()
 
     getCurrentLanguage: (grammar) ->
-        return grammar
+        comments = new Comments(grammar)
+        return comments
 
     insert: (event) ->
         template = new Template(@insertTemplateStr)
@@ -59,12 +60,11 @@ module.exports = EpitechHeader =
         curdate = curdate.split ' '
         year = curdate.pop()
         com = @getCurrentLanguage editor.getGrammar().name
-        template.replace '{{_startcom_}}', com
+        template.replace '{{_startcom_}}', com.getStart()
+        template.replace '{{_midcom_}}', com.getMiddle()
+        template.replace '{{_endcom_}}', com.getEnd()
         template.replace '{{year}}', year
         template.replace '{{project}}', project
         template.replace '{{description}}', ""
         editor.insertText template.getTemplate()
-        editor.setSelectedBufferRange [
-            [1, 8 + editor.getTitle().length],
-            [1, 8 + editor.getTitle().length + project.length]
-        ]
+        editor.setCursorBufferPosition [4,3]

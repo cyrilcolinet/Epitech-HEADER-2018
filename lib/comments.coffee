@@ -2,48 +2,50 @@ module.exports =
     class Comments
         constructor: (grammar) ->
             @grammar = grammar.toLowerCase()
-            @com = {
-                "default": {
-                    "start": "##",
-                    "middle": "##",
-                    "end": "##"
-                },
-                "c": {
-                    "start": "/*",
-                    "middle": "**",
-                    "end": "*/"
-                },
-                "c++": {
-                    "start": "/*",
-                    "middle": "**",
-                    "end": "*/"
-                },
-                "html": {
-                    "start": "<!--",
-                    "middle": "--",
-                    "end": "-->"
-                },
-                "python": {
-                    "start": "#!/usr/bin/env python\n##",
-                    "middle": "##",
-                    "end": "##"
-                },
-                "perl": {
-                    "start": "#!/usr/bin/env perl\n##",
-                    "middle": "##",
-                    "end": "##"
-                },
-                "php": {
-                    "start": "#!/usr/bin/env perl\n<?php\n/*",
-                    "middle": "**",
-                    "end": "*/"
-                },
-                "lisp": {
-                    "start": ";;",
-                    "middle": ";;",
-                    "end": ";;"
-                }
-            }
+            @arr = []
+            console.log @grammar
+            if @grammar == "c" || @grammar == "c++" || @grammar == "css" || @grammar == "javascript" || @grammar == "java"
+                @arr[0] = "/*"
+                @arr[1] = "**"
+                @arr[2] = "*/"
+            else if @grammar == "html"
+                @arr[0] = "<!--"
+                @arr[1] = "--"
+                @arr[2] = "-->"
+            else if @grammar == "python"
+                @arr[0] = "#!/usr/bin/env python\n##"
+                @arr[1] = "##"
+                @arr[2] = "##"
+            else if @grammar == "perl"
+                @arr[0] = "#!/usr/bin/env perl\n##"
+                @arr[1] = "##"
+                @arr[2] = "##"
+            else if @grammar == "php"
+                @arr[0] = "#!/usr/bin/env perl\n<?php\n/*"
+                @arr[1] = "**"
+                @arr[2] = "*/"
+            else if @grammar == "lisp" || @grammar == "sql"
+                @arr[0] = ";;"
+                @arr[1] = ";;"
+                @arr[2] = ";;"
+            else if @grammar == "latex" || @grammar == "tex"
+                @arr[0] = "%%"
+                @arr[1] = "%%"
+                @arr[2] = "%%"
+            else if @grammar == "pascal"
+                @arr[0] = "{"
+                @arr[1] = ""
+                @arr[2] = "}"
+            else
+                @arr[0] = "##"
+                @arr[1] = "##"
+                @arr[2] = "##"
 
         getStart: ->
-            
+            return @arr[0]
+
+        getMiddle: ->
+            return @arr[1]
+
+        getEnd: ->
+            return @arr[2]
