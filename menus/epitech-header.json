@@ -4,8 +4,8 @@
         "submenu": [{
             "label": "Epitech HEADER 2018",
             "submenu": [{
-                "label": "Create header",
-                "command": "epitech-header:create_header"
+                "label": "Insert epitech header on the current opened file",
+                "command": "epitech-header:insert"
             }]
         }]
     }]
