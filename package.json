@@ -6,6 +6,7 @@
   "keywords": [],
   "repository": "https://github.com/mrlizzard/Epitech-HEADER-2018",
   "license": "GPL-3.0",
+  "keywords": ["epitech", "norm", "coding-style", "header", "epitech-header"],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
