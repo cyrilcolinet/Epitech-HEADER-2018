@@ -6,6 +6,23 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 > :bulb: La version peut changer durant les années.<br />
 > Pour implémenter les nouvelles versions (si il y en a), faites le moi savoir en issue ou directement par email.
 
+## Langages supportés
+
+- C
+- C++
+- CSS
+- JavaScript
+- CoffeeScript
+- HTML
+- Python
+- Perl
+- PHP
+- Java
+- Lisp
+- SQL
+- LaTeX / TeX
+- Pascal
+
 ## Exemple de header
 
 ```c
