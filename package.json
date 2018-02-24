@@ -1,10 +1,10 @@
 {
   "name": "epitech-header-2018",
   "main": "./lib/epitech-header",
-  "version": "1.0.5",
+  "version": "0.0.0",
   "description": "Epitech Header 2018",
   "keywords": [],
-  "repository": "https://github.com/sNohz/phoenix-epitech-headers",
+  "repository": "https://github.com/mrlizzard/Epitech-HEADER-2018",
   "license": "GPL-3.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
