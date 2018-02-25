@@ -45,6 +45,12 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 - Faites <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>H</kbd>, remplissez la description
 - Sauvegardez !
 
+## Raccourcis clavier
+
+|Key|Command|
+|---|---|
+|<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>H</kbd>|Adds a valid header to your file.|
+
 ## Exemple de header
 
 ```
