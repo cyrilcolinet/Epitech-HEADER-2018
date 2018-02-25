@@ -13,6 +13,7 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 - CSS
 - JavaScript
 - CoffeeScript
+- Shell (bash, sh, ...)
 - HTML
 - Python
 - Perl
