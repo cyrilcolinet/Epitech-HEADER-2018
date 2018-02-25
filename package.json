@@ -1,7 +1,7 @@
 {
   "name": "epitech-header-2018",
   "main": "./lib/epitech-header",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Header epitech 2018.\nCréez votre header simplement, de manière efficace, et ce, dans n'importe quel fichier.",
   "keywords": [
     "epitech",
