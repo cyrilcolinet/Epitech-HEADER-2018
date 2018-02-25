@@ -24,14 +24,35 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 - LaTeX / TeX
 - Pascal
 
+## Installation
+
+- Ouvrez les préférences Atom: **edit > Préférences** ou <kbd>CTRL</kbd> + <kbd>,</kbd>
+- Ouvrez l'onglet **Install**, et tapez `epitech-header-2018`
+- Faites <kbd>Enter</kbd>
+- Prenez le premier et cliquer sur `Install`
+- Redémarrez votre éditeur (pas forcément nécessaire)
+- Ouvrez un fichier dont le language est supporté (le format par défaut est le suivant)
+
+```
+##
+## EPITECH PROJECT, 2018
+## [project name]
+## File description:
+## [enter description here]
+##
+```
+
+- Faites <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>H</kbd>, remplissez la description
+- Sauvegardez !
+
 ## Exemple de header
 
-```c
+```
 /*
 ** EPITECH PROJECT, 2018
-** $(PROJECT_NAME)
+** [project name]
 ** File description:
-** $(FILE_DESC)
+** [enter description here]
 */
 ```
 
