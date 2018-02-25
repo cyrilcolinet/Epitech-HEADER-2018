@@ -19,7 +19,8 @@ module.exports = EpitechHeader =
         {{_midcom_}} {{project}}
         {{_midcom_}} File description:
         {{_midcom_}} {{description}}
-        {{_endcom_}}\n\n
+        {{_endcom_}}\n
+        \n
         """
 
         @subscriptions.add atom.commands.add 'atom-workspace', 'epitech-header:insert': => @insert()
@@ -48,7 +49,10 @@ module.exports = EpitechHeader =
     insert: (event) ->
         template = new Template(@insertTemplateStr)
         editor = atom.workspace.getActiveTextEditor()
+        hasHeader = @containsHeader editor
         unless editor?
+            return
+        if hasHeader == true
             return
         coordinates = editor.getCursorBufferPosition()
         editor.moveToTop()
@@ -68,3 +72,12 @@ module.exports = EpitechHeader =
         template.replace '{{description}}', ""
         editor.insertText template.getTemplate()
         editor.setCursorBufferPosition [4,3]
+
+    containsHeader: (editor) ->
+        header = '.*\n.* EPITECH PROJECT, .*\n.* .*\n.* File description:\n.*\t.*\n.*\n'
+        regex = new RegExp header, 'g'
+        tmp = false
+        editor.scan regex, ({stop}) ->
+            tmp = true
+            stop()
+        return tmp
