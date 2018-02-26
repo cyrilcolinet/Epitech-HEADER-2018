@@ -69,12 +69,13 @@ module.exports = EpitechHeader =
         template.replace '{{_endcom_}}', com.getEnd()
         template.replace '{{year}}', year
         template.replace '{{project}}', project
-        template.replace '{{description}}', ""
-        editor.insertText template.getTemplate()
-		editor.setSelectedBufferRange [
-        	[4, com.getMiddle().length],
-        	[4, 23]
-      	]
+        template.replace '[enter description here]', ""
+        editor.insertText template.getTemplate() ## Temp
+        editor.setCursorBufferPosition [4,3]
+		##editor.setSelectedBufferRange [
+		##	[4,com.getMiddle().length],
+		##	[4,23]
+		##]
 
     containsHeader: (editor) ->
         header = '.*\n.* EPITECH PROJECT, .*\n.* .*\n.* File description:\n.*\t.*\n.*\n'
