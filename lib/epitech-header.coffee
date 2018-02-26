@@ -71,7 +71,6 @@ module.exports = EpitechHeader =
         template.replace '{{project}}', project
         template.replace '{{description}}', ""
         editor.insertText template.getTemplate()
-        editor.setCursorBufferPosition [4,3]
 		editor.setSelectedBufferRange [
         	[4, com.getMiddle().length],
         	[4, 23]
