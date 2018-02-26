@@ -63,5 +63,5 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 ```
 
 Avec:
-  - **PROJECT_NAME**: Le nom du projet/repo (exemple: PSU_minishell1_2017)
-  - **FILE_DESC**: Description du fichier, ce qu'il contient, l'utilité des différentes functions etc...
+  - **[project name]**: Le nom du projet/repo (exemple: PSU_minishell1_2017)
+  - **[enter description here]**: Description du fichier, ce qu'il contient, l'utilité des différentes functions etc...
