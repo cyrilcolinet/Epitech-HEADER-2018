@@ -20,7 +20,6 @@ module.exports = EpitechHeader =
         {{_midcom_}} File description:
         {{_midcom_}} [enter description here]
         {{_endcom_}}\n
-        \n
         """
 
         @subscriptions.add atom.commands.add 'atom-workspace', 'epitech-header:insert': => @insert()
