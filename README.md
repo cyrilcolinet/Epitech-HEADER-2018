@@ -23,6 +23,7 @@ de mettre le **Epitech HEADER (2017-2018)** en haut du fichier.
 - SQL
 - LaTeX / TeX
 - Pascal
+- Go / Golang
 
 ## Installation
 
