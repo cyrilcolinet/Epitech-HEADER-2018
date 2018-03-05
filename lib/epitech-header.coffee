@@ -9,10 +9,7 @@ module.exports = EpitechHeader =
     subscriptions: null
 
     activate: (state) ->
-        # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
         @subscriptions = new CompositeDisposable
-        # Register command that toggles this view
-
         @insertTemplateStr = """
         {{_startcom_}}
         {{_midcom_}} EPITECH PROJECT, {{year}}
@@ -69,8 +66,8 @@ module.exports = EpitechHeader =
         template.replace '{{year}}', year
         template.replace '{{project}}', project
         template.replace '[enter description here]', ""
-        editor.insertText template.getTemplate() ## Temp
-        editor.setCursorBufferPosition [4,3]
+        editor.insertText template.getTemplate()
+        editor.setCursorBufferPosition [4,3] ## Temp
 		##editor.setSelectedBufferRange [
 		##	[4,com.getMiddle().length],
 		##	[4,23]
