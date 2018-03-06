@@ -4,7 +4,7 @@ module.exports =
             @grammar = grammar.toLowerCase()
             @arr = []
             console.log @grammar
-            if @grammar == "c" || @grammar == "cpp" || @grammar == "css" || @grammar == "javascript" || @grammar == "java" || @grammar == "go"
+            if @grammar == "c" || @grammar == "cpp" || @grammar == "css" || @grammar == "javascript" || @grammar == "java" || @grammar == "go" || @grammar == "c++"
                 @arr[0] = "/*"
                 @arr[1] = "**"
                 @arr[2] = "*/"
