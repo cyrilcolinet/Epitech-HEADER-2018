@@ -10,7 +10,7 @@ module.exports =
                 @arr[2] = "*/"
                 @cursor = [
                     [ 4, @arr[1].length + 1 ],
-                    [ 4, @arr[1].length + 24 ]
+                    [ 4, @arr[1].length + 25 ]
                 ]
             else if @grammar == "html"
                 @arr[0] = "<!--"
@@ -18,7 +18,7 @@ module.exports =
                 @arr[2] = "  -->"
                 @cursor = [
                     [ 4, @arr[1].length + 1 ],
-                    [ 4, @arr[1].length + 24 ]
+                    [ 4, @arr[1].length + 25 ]
                 ]
             else if @grammar == "python"
                 @arr[0] = "#!/usr/bin/env python\n\n##"
@@ -26,15 +26,15 @@ module.exports =
                 @arr[2] = "##"
                 @cursor = [
                     [ 6, @arr[1].length + 1 ],
-                    [ 6, @arr[1].length + 24 ]
+                    [ 6, @arr[1].length + 25 ]
                 ]
             else if @grammar == "perl"
                 @arr[0] = "#!/usr/bin/env perl\n\n##"
                 @arr[1] = "##"
                 @arr[2] = "##"
                 @cursor = [
-                    [ 6, @arr[1].length + 24 ]
                     [ 6, @arr[1].length + 1 ],
+                    [ 6, @arr[1].length + 25 ]
                 ]
             else if @grammar == "shell script"
                 @arr[0] = "#!/bin/bash\n##"
@@ -42,7 +42,7 @@ module.exports =
                 @arr[2] = "##"
                 @cursor = [
                     [ 5, @arr[1].length + 1 ],
-                    [ 5, @arr[1].length + 24 ]
+                    [ 5, @arr[1].length + 25 ]
                 ]
             else if @grammar == "php"
                 @arr[0] = "#!/usr/bin/env php\n\n<?php\n/*"
@@ -50,7 +50,7 @@ module.exports =
                 @arr[2] = "*/"
                 @cursor = [
                     [ 7, @arr[1].length + 1 ],
-                    [ 7, @arr[1].length + 24 ]
+                    [ 7, @arr[1].length + 25 ]
                 ]
             else if @grammar == "lisp" || @grammar == "sql"
                 @arr[0] = ";;"
@@ -58,19 +58,23 @@ module.exports =
                 @arr[2] = ";;"
                 @cursor = [
                     [ 4, @arr[1].length + 1 ],
-                    [ 4, @arr[1].length + 24 ]
+                    [ 4, @arr[1].length + 25 ]
                 ]
             else if @grammar == "latex" || @grammar == "tex"
                 @arr[0] = "%%"
                 @arr[1] = "%%"
                 @arr[2] = "%%"
+				@cursor = [
+                    [ 4, @arr[1].length + 1 ],
+                    [ 4, @arr[1].length + 25 ]
+                ]
             else if @grammar == "pascal"
                 @arr[0] = "{"
                 @arr[1] = ""
                 @arr[2] = "}"
                 @cursor = [
                     [ 4, @arr[1].length + 1 ],
-                    [ 4, @arr[1].length + 24 ]
+                    [ 4, @arr[1].length + 25 ]
                 ]
             else
                 @arr[0] = "##"
@@ -78,7 +82,7 @@ module.exports =
                 @arr[2] = "##"
                 @cursor = [
                     [ 4, @arr[1].length + 1 ],
-                    [ 4, @arr[1].length + 24 ]
+                    [ 4, @arr[1].length + 25 ]
                 ]
 
         getStart: ->
