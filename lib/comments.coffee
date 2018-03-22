@@ -64,7 +64,7 @@ module.exports =
                 @arr[0] = "%%"
                 @arr[1] = "%%"
                 @arr[2] = "%%"
-				@cursor = [
+                @cursor = [
                     [ 4, @arr[1].length + 1 ],
                     [ 4, @arr[1].length + 25 ]
                 ]
