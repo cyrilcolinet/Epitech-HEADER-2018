@@ -54,6 +54,8 @@ module.exports = EpitechHeader =
         editor.moveToTop()
         editor.moveToBeginningOfLine()
         buffer = atom.workspace.getActivePaneItem().buffer
+        if !buffer
+            return
         project = @getFileProject buffer.file
         date = new Date()
         curdate = date.toDateString()
